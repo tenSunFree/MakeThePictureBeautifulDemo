@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4ebf2"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#00000000">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#80818a6f"
+            app:cardCornerRadius="4dp">
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/main_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:banner_indicatorGravity="right"
+                app:banner_isNumberIndicator="true"
+                app:banner_numberIndicatorTextColor="@color/colorPrimary"
+                app:banner_numberIndicatorTextSize="18sp"
+                app:banner_pointAutoPlayAble="false"
+                app:banner_pointContainerBackground="@android:color/transparent">
+            </cn.bingoogolapple.bgabanner.BGABanner>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <Button
+            android:shadowColor="#84a45a"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:id="@+id/main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_lamp_button_style2"
+            android:text="選擇圖片"
+            android:textSize="15sp"
+            android:textColor="#715e4e"/>
+    </LinearLayout>
+</LinearLayout>
